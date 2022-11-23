@@ -1,0 +1,184 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+#playerPortrait {
+  display:block;
+  width:100%;
+}
+#monsterPortrait {
+  display:block;
+  width:100%;
+  width:100%;
+}
+.button{
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+  color:black;
+  border: solid black 3px;
+  background-color:rgb(149, 149, 149);
+  transition: background-color 0.3s;
+}
+.button:hover{
+  background-color:rgb(199, 199, 199);
+  cursor:pointer;
+}
+.button:active{
+  background-color:rgb(243, 242, 242);
+  cursor:pointer;
+}
+.container{
+  width:1200px;
+  margin:0 auto;
+  background-color:black;
+}
+.screen{
+  padding:10px;
+  gap:10px;
+  display:flex;
+  justify-content: center;
+  width:1200px;
+  height:700px;
+  background-color:black;
+}
+.screen * {
+  border-radius: 10px;
+}
+.flex-item{
+  padding:10px;
+}
+.col{
+  display:flex;
+  flex-flow: column nowrap;
+  padding:10px;
+  gap:10px;
+}
+.row{
+  display:flex;
+  flex-flow: row nowrap;
+  padding:10px;
+  gap:10px;
+}
+.content {
+  padding: 10px;
+  width:100%;
+  height:100%
+}
+#monsterPortrait{
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.relative {
+  position:relative;
+}
+.white{
+  background-color:white;
+}
+#monsterHitPointsBar{
+  background-color:red;
+  width:100%;
+  height:100%;
+}#playerHitPointsBar{
+  background-color:red;
+  width:100%;
+  height:100%;
+}
+.hitpoint-text{
+  position:absolute;
+  display:inline-block;
+  width:100%;
+  top:3px;
+  text-align:center;
+  font-weight:bold;
+}
+.stat{
+  background-color:white;
+}
+.stat > span {
+  display:inline-block;
+  width:100%;
+  padding-left:10px;
+}
+.gap-5{
+  gap:5px;
+}
+.no-padding{
+  padding:0px
+}
+.w-33{
+  width:33.33%;
+}
+.w-10{
+  width:10%;
+}
+.w-20{
+  width:20%;
+}
+.w-25{
+  width:25%;
+}
+.w-30{
+  width:30%;
+}
+.w-40{
+  width:40%;
+}
+.w-50{
+  width:50%;
+}
+.w-60{
+  width:60%;
+}
+.w-80{
+  width:80%;
+}
+.w-100{
+  width:100%;
+}
+
+.h-10{
+  height:10%;
+}
+.h-20{
+  height:20%;
+}
+.h-30{
+  height:30%;
+}
+.h-40{
+  height:40%;
+}
+.h-50{
+  height:50%;
+}
+.h-60{
+  height:60%;
+}
+.h-80{
+  height:80%;
+}
+.h-100{
+  height:100%;
+}
+.h-90{
+  height:90%;
+}

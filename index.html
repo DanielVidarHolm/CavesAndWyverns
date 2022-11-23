@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Dnd Clone</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class='container'>
+			<div class='screen'>
+
+				<!-- Character Section start -->
+				<div class='flex-item col w-33 gap-3'>
+					<div class='flex-item col h-40 w-100 white'>
+						<div class='flex-item row h-90 '>
+							
+							<!-- Character portrait -->
+							
+							<div class="flex-item col w-50 h-100 gray ">
+								
+								<img id='playerPortrait' src='' >
+								<div class='stat'>
+									<span id='playerName'></span>
+								</div>
+							</div>
+
+							<!-- Character Attributes -->
+							<div id='playerStats' class="flex-item col w-50 h-100 gap-5">
+								<div class='stat'>
+									<span>Armor class: <span class='armorText'>15</span></span>
+								</div>
+								<div class='stat'>
+									<span>Strength: <span class='strengthText'>12</span></span>
+								</div>
+								<div class='stat'>
+									<span>Dexterity: <span class='dexterityText'>12</span></span>
+								</div>
+								<div class='stat'>
+									<span>Constitution: <span class='constitutionText'>12</span></span>
+								</div>
+								<div class='stat'>
+									<span>Intelligence: <span class='intelligenceText'>12</span></span>
+								</div>
+								<div class='stat'>
+									<span>Wisdom: <span class='wisdomText'>12</span></span>
+								</div>
+								<div class='stat'>
+									<span>Charisma: <span class='charismaText'>12</span></span>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="flex-item w-100 h-10 gray no-padding relative">
+							<div id="playerHitPointsBar">
+								
+							</div>
+							<span class='hitpoint-text'><span id="playerCurHitPoints">20</span> / <span id="playerMaxHitPoints"></span></span>
+						</div>
+						
+					</div>
+					<div class='flex-item h-50 white'>
+
+						<!-- Character skills -->
+						<div class="flex-item w-100 h-100 gray">
+					
+						</div>
+
+						
+					
+					</div>
+					<div class='flex-item row h-10 white'>
+						<!-- character control -->
+						<div id='actionButton' class="flex-item w-25 h-100 button">
+							Action
+						</div>
+						<div class="flex-item w-25 h-100 button">
+					
+						</div>
+						<div class="flex-item w-25 h-100 button">
+					
+						</div>
+						<div class="flex-item w-25 h-100 button">
+					
+						</div>
+					
+					</div>
+
+				</div>
+				<!-- Character section end -->
+
+				<!-- Text section start -->
+				<div class='flex-item w-33 '>
+					<div class='content white'>
+					</div>
+				</div>
+				<!-- Text section end  -->
+
+				<!-- Monster section start -->
+				<div class='flex-item col w-33 '>
+
+					
+					<div class='flex-item col h-50 white'>
+						<!-- Monster image -->
+						<div class="flex-item w-100 h-90 gray">
+							<img id='monsterPortrait' src='' >
+						</div>
+						<!-- Monster health -->
+						<div class="flex-item w-100 h-10 gray no-padding relative">
+							<div id="monsterHitPointsBar">
+								
+							</div>
+							<span class='hitpoint-text'><span id="monsterCurHitPoints">20</span> / <span id="monsterMaxHitPoints"></span></span>
+						</div>
+						
+					
+					</div>
+
+					<!-- Monster info  -->
+					<div class='flex-item h-50 white'>
+						<div class="flex-item w-100 h-100 gray">
+							<div id='monsterStats' class="flex-item col w-100 h-100 gap-5">
+								<div class='stat'>
+									<span id='monsterName'></span>
+								</div>
+								<div class='stat'>
+									<span>Armor class: <span class='armorText'>15</span></span>
+								</div>
+								<div class='stat'>
+									<span>Strength: <span class='strengthText'>12</span></span>
+								</div>
+								<div class='stat'>
+									<span>Dexterity: <span class='dexterityText'>12</span></span>
+								</div>
+								<div class='stat'>
+									<span>Constitution: <span class='constitutionText'>12</span></span>
+								</div>
+								<div class='stat'>
+									<span>Intelligence: <span class='intelligenceText'>12</span></span>
+								</div>
+								<div class='stat'>
+									<span>Wisdom: <span class='wisdomText'>12</span></span>
+								</div>
+								<div class='stat'>
+									<span>Charisma: <span class='charismaText'>12</span></span>
+								</div>
+							</div>
+					
+						</div>
+						
+					
+					</div>
+					
+				</div>
+				<!-- Monster section end -->
+			</div>
+		</div>
+
+
+
+		<script type="module" src="js/monster.js"></script>
+		<script type="module" src="js/character.js"></script>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>
