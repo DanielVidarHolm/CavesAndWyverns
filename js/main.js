@@ -24,23 +24,21 @@ function createCharacter(){
 }
 
 async function fetchMonster(monster){
-    let data = await fetch(`https://www.dnd5eapi.co/api/monsters/${monster}`)
+    let res = await fetch(`https://www.dnd5eapi.co/api/monsters/${monster}`)
+    let data = await res.json()
+
     return data
 }
 
 async function createMonster() {
     const monsters = ['goblin', 'bandit', 'boar', 'cultist', 'dire-wolf', 'drow']
-    let res = await fetchMonster(monsters[Math.floor(Math.random() * monsters.length)])
-    let data = await res.json()
+    let data = await fetchMonster(monsters[Math.floor(Math.random() * monsters.length)])
+    
     let monster = new Monster(data['name'], data['armor_class'],data['hit_points'],data["strength"],data["dexterity"],data[ "constitution"],data["intelligence"],data["wisdom"],data["charisma"],data["actions"],data["special_abilities"],data["challenge_rating"],data["xp"],'./img/placeholder_monster.png')
     
     return monster
 }
 
-async function showMonster(monster){
-    document.querySelector('#monsterPortrait').src = monster['image']
-    
-}
 
 
 
