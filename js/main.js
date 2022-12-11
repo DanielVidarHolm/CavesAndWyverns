@@ -1,6 +1,6 @@
 import {Character} from './character.js';
 import {Monster} from './monster.js';
-
+// Im the best
 let monster;
 
 document.querySelector('#actionButton').addEventListener('click',newMonster)
